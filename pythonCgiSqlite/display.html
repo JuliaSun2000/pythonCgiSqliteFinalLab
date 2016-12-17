@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>display.html</title>  
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script>
+    $.get("get.py",function(data){
+       $("#content").html(data);});
+
+    window.onload = function(){
+    $("#addBtn").on("click", function(){
+        window.location = "index.html";});
+    };   
+  </script>
+</head>
+<body>
+<h2><center>Student Grade List</center></h2>
+<div id="content"></div>
+<tr class="info">
+      <td><input type="button" value="Add another student" id="addBtn" class="btn btn-info"></td>
+</tr>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</body>
+</html>

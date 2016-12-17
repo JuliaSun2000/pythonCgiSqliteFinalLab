@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+    <h2>Student Information</h2>
+    <form method="post" action="sql.py" name="profile" id="profile" class="form-horizontal">
+    <table class="table">
+    <tr class="success">
+        <td>First Name</td>
+        <td><input type="text" name="firstName" id="fname">
+        <span id="fnameWarning" class="alert"></span>
+        </td>
+    </tr>
+    <tr class="danger">
+        <td>Last Name</td>
+        <td><input type="text" name="lastName" id="lname">
+        <span id="lnameWarning" class="alert"></span>
+        </td>
+    </tr>
+    <tr class="info">
+        <td>Course</td>
+        <td><select name="course" id="course">
+        <option value="">Select Course</option>
+        <option value="1">CST8260-database</option>
+        <option value="2">CST8209-javascript</option>
+        <option value="3">CST8279-python</option>
+        <option value="4">MAD9013-html/css</option>
+        </select>
+        <span id="courseWarning" class="alert"></span>
+        </td>
+    </tr>
+    <tr class="warning">
+        <td>Work Type</td>
+        <td><select name="workType" id="workType">
+        <option value="">Select Work Type</option>
+        <option value="1">Assignments</option>
+        <option value="2">Midterms</option>
+        <option value="3">Final Exam</option>
+        </select>
+        <span id="workTypeWarning" class="alert"></span>
+        </td>
+    </tr>
+    <tr class="danger">
+        <td>Grades</td>
+        <td><input type="text" name="grades" id="grades" placeholder="Enter your scores and seperated by comma" style="width:50%">
+          <span id="gradesWarning" class="alert"></span>
+        </td>
+    </tr>
+    <tr class="info">
+          <td><input type="submit" value="Submit" name="submitBtn" class="btn btn-info"></td>
+          <td><input type="button" value="Display" name="displayBtn" id="displayBtn" class="btn btn-info"></td>
+    </tr>
+    </table>
+</form>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src="scripts/validate.js"></script>
+<script src="scripts/events.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</body>
+</html>
